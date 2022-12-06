@@ -32,7 +32,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-duration: 500ms;
+    animation-duration: 0.5s;
     animation-delay: 1.5s;
     animation-name: fade;  
     animation-timing-function: ease;   
@@ -148,7 +148,7 @@ export default {
             position: absolute;
             font-size: 1.2em;
             right: 3px;
-            top: 15px;
+            top: 12px;
             letter-spacing : 2.2px;
             animation-duration: .5s;
             animation-name: eben;  
@@ -218,7 +218,7 @@ export default {
 
 @keyframes eben {
     0%{
-        top: 15px;
+        top: 12px;
     }
     100%{
         top: -20px;
@@ -228,10 +228,11 @@ export default {
 @keyframes fade {
     0%{
         z-index: 10;
+        opacity: 1;
     }
     100%{
-        opacity: 0%;
         z-index: -10;
+        opacity: 0;
     }
 }
 

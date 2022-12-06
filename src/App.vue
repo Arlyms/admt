@@ -1,18 +1,27 @@
 <template>
   <Loader/>
-  <!--<Navigation/>-->
+  <Home/>
+  <Produit/>
+  <Contact/>
+  <Footer/>
   <router-view/>
 </template>
 
 <script>
 import Loader from '@/views/Loader.vue'
-//import Navigation from '@/components/Navigation.vue'
+import Home from '@/views/Home.vue'
+import Produit from '@/views/Produit.vue'
+import Contact from '@/views/Contact.vue'
+import Footer from '@/views/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Loader,
-    //Navigation
+    Loader, 
+    Home, 
+    Produit,
+    Contact,
+    Footer
   }
 }
 </script>
