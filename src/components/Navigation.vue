@@ -2,11 +2,12 @@
     <header>
         <nav>
             <div class="branding">
-                <img src="@/assets/logo-admt.png" alt="logo admt">
+                <!--<img src="@/assets/logo-admt.png" alt="logo admt">-->
             </div> 
             <ul class="navigation">
-                <li><router-link class="link" :to="{name: 'home'}">Home</router-link></li>
-                <li><router-link class="link" :to="{name:'about'}">Contact</router-link></li>
+                <li><router-link class="link" :to="{name:'home'}">Accueil</router-link></li>
+                <li><router-link class="link" :to="{name:'portfolio'}">Realisations</router-link></li>
+                <li><router-link class="link" :to="{name:'contact'}">Contact</router-link></li>
             </ul>          
         </nav>
     </header>
@@ -25,8 +26,7 @@ export default {
 
 <style lang="scss" scoped>
     header {
-        background-color: #D6B285;
-        z-index: 2;
+        z-index: 3;
         width: 100%;
         position: fixed;
         nav{
@@ -38,7 +38,7 @@ export default {
             padding: 1em;
             ul, .link{
                 font-weight: 500;
-                color: white;
+                color: #D6B285;
                 list-style: none;
                 text-decoration: none;
             }
@@ -47,7 +47,7 @@ export default {
                 padding: 16px;
             }
             .link{
-                font-size: 14px;
+                font-size: 16px;
                 padding-bottom: 4px;
                 border-bottom: 1px solid transparent;
                 transition: .5s ease all;
@@ -58,7 +58,7 @@ export default {
             }            
             .branding{
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 img{
                     width: 100px;
                 }
