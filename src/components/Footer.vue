@@ -1,8 +1,21 @@
 <template>
     <div id="footer">
-        <div class="logo"></div>
-        <div class="reseaux"></div>
-        <div class="informations"></div>
+        <div class="logo">
+            <img src="../assets/logo-admt.png" alt="">
+        </div>
+        <div class="reseaux">
+            <h4>Contacts</h4>
+            <div class="links">
+                <a href="https://www.instagram.com/ebenisterie.admt_/" target="_blank" >Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100076067143970" target="_blank" >Facebook</a>
+                <router-link :to="{name:'contact'}">Mail</router-link>
+            </div>
+        </div>
+        <div class="informations">
+            <h4>Informations</h4>
+            <p>ADMT<br>85 RUE DE LA CHAPELLE<br>38930 LALLEY<br>FRANCE</p>
+            <P><router-link class="link" :to="{name:'contact'}">Mentions légales</router-link></P>
+        </div>
     </div>
 </template>
 
@@ -24,11 +37,35 @@ export default {
         background-color: #D6B285;
         display: flex;
         justify-content: space-around;
-        .logo, .reseaux, .informations{
-            background-color: black;
+        align-items: center;
+        
+        h4{
+            color: #1b1b1d;
+            padding-bottom: 10px;
+        }
+
+        p{
+            font-size: 0.8em;
+        }
+        .reseaux, .informations{
             width: 30%;
             height: 80%;
             margin-top: 20px;
-        }             
+            text-align: start;
+        }  
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            height: 80%;
+            img{
+            width: 40%;
+            } 
+        }  
+        .links{
+            display: flex;
+            align-items: center;
+        }     
     }
 </style>

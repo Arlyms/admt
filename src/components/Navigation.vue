@@ -52,8 +52,8 @@ export default {
                 border-bottom: 1px solid transparent;
                 transition: .5s ease all;
                 &:hover{
-                    color: #9039fc;
-                    border-color: #9039fc;
+                    color: white;
+                    border-color: white;
                 }
             }            
             .branding{
