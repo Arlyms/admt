@@ -29,6 +29,7 @@ export default {
             left: 0;
             width: 70%;
             height: 100%;
+            background-color: #1b1b1d;
             .background{
                 width: 100%;
                 height: 100%;

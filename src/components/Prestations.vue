@@ -67,11 +67,11 @@ export default {
         width: 20%;
         height: 100%;
         background-color: #D6B285;
-        border-radius: 10px;
+        //border-radius: 10px;
         &__visuel{
           width: 100%;
           height: 80%;
-          border-radius: 10px 10px 0 0;
+          //border-radius: 10px 10px 0 0;
           object-fit: cover;
           box-shadow: 0px 2px 20px 0px rgba(27, 27, 29, 1);
         }

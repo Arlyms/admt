@@ -6,9 +6,9 @@
         <div class="reseaux">
             <h4>Contacts</h4>
             <div class="links">
-                <a href="https://www.instagram.com/ebenisterie.admt_/" target="_blank" >Instagram</a>
-                <a href="https://www.facebook.com/profile.php?id=100076067143970" target="_blank" >Facebook</a>
-                <router-link :to="{name:'contact'}">Mail</router-link>
+                <a href="https://www.instagram.com/ebenisterie.admt_/" target="_blank" ><img src="../assets/reseaux/instagram.png" alt="icone instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100076067143970" target="_blank" ><img src="../assets/reseaux/facebook.png" alt="icone facebook"></a>
+                <router-link :to="{name:'contact'}"><img src="../assets/reseaux/email.png" alt="icone enveloppe"></router-link>
             </div>
         </div>
         <div class="informations">
@@ -66,6 +66,11 @@ export default {
         .links{
             display: flex;
             align-items: center;
+            width: 100%;
+            img{
+                height: 2.2em;
+                padding: 10px 10px 10px 0;
+            }
         }     
     }
 </style>

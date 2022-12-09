@@ -20,7 +20,7 @@ const routes = [
     component: Contact   
   }  
 ]
-
+// regarder le srcoll behavior pour revenir en haut de page au changement de page 
 const router = createRouter({
   history: createWebHashHistory(),
   routes
